@@ -2,12 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 console.log("3bker");
 var prefix = "s!b";
-
-client.on('ready', function () {
-    console.log('Bot Connected')
-    client.user.setGame(`Kingdom System ( Prefix: + )`,"http://twitch.tv/Death Shop")
-})
-
 client.on("message", message => {
 
             if (message.content.startsWith(prefix + "la")) {
@@ -29,7 +23,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : black ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`!bc |mahmod AR |server`,"http://twitch.tv/Death Shop")
+client.user.setGame(` Santos Broadcast ( s!b Message )`,"http://twitch.tv/Death Shop")
 client.user.setStatus("dnd")
 });
 
