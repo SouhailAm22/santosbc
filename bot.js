@@ -2,6 +2,12 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 console.log("3bker");
 var prefix = "s!b";
+
+client.on('ready', function () {
+    console.log('Bot Connected')
+    client.user.setGame(`Kingdom System ( Prefix: + )`,"http://twitch.tv/Death Shop")
+})
+
 client.on("message", message => {
 
             if (message.content.startsWith(prefix + "la")) {
